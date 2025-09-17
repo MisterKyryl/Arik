@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	<include src="@components/layout/head/head.html" locals='{
+<include src="@components/layout/head/head.html" locals='{
 		"title":"Розробка компонентів", 
 		"preloader": {
 			"enable":"false",
@@ -9,21 +9,29 @@
 		"keywords":"", 
 		"description":""
 	}'>
-	</include>
-	<style>
-		.components{
-			padding: 50px;
-			display: flex;
-			flex-direction: column;
-			gap: 30px;
-		}
-	</style>
-	<body>
-		<div class="components">
-			<div class="components__item">
+</include>
+<style>
+	.components {
+		padding: 50px;
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+</style>
 
-			</div>
+<body>
+	<div class="components">
+		<div class="components__item">
+			<a href="#" data-fls-button class="button">Button</a>
+			<a href="#" data-fls-button class="button button--lite">Button</a>
+			<a href="#" data-fls-button class="button button--icon --icon-arrow-ru">Button</a>
+
+			<a href="#" data-fls-button class="button button--text --icon-arrow-ru">Button Text</a>
+			<a href="#" data-fls-button class="button button--text button--text-big --icon-arrow-d">Button Text</a>
+			<a href="#" data-fls-button class="button button--text button--text-big button--text-rev --icon-arrow">To Top</a>
 		</div>
-	</body>
-	<script type="module" src="@js/app.js"></script>
+	</div>
+</body>
+<script type="module" src="@js/app.js"></script>
+
 </html>

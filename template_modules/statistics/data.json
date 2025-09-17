@@ -31,13 +31,62 @@
         "start": 1758037373965,
         "end": 1758038579270,
         "type": "build"
+      },
+      {
+        "date": "16.09.2025",
+        "start": 1758041491332,
+        "end": 1758041717555
+      },
+      {
+        "date": "16.09.2025",
+        "start": 1758041723423,
+        "end": 1758048213398
+      },
+      {
+        "date": "17.09.2025",
+        "start": 1758121812505,
+        "end": 1758130632888
+      },
+      {
+        "date": "17.09.2025",
+        "start": 1758130658143,
+        "end": 1758135893498,
+        "type": "build"
       }
     ],
     "files": [
       "index.html",
       "settings.scss",
       "home.html",
-      "style.scss"
+      "style.scss",
+      "iconfont.svg",
+      "iconfont.ttf",
+      "iconfont.woff2",
+      "iconfont.html",
+      "_components.html",
+      "s-ws.svg",
+      "s-yt.svg",
+      "s-tw.svg",
+      "s-tiktok.svg",
+      "s-tch.svg",
+      "s-inst.svg",
+      "s-ptn.svg",
+      "s-fb.svg",
+      "s-drb.svg",
+      "s-bh.svg",
+      "phone.svg",
+      "minus.svg",
+      "plus.svg",
+      "check.svg",
+      "mail.svg",
+      "chain.svg",
+      "info.svg",
+      "arrow.svg",
+      "button.scss",
+      "header.scss",
+      "header.html",
+      "menu.scss",
+      "menu.html"
     ]
   }
 }
