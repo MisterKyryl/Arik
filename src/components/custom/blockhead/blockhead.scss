@@ -1,0 +1,56 @@
+.blockhead {
+	display: grid;
+	justify-items: center;
+	gap: 16px;
+	text-align: center;
+	text-wrap: balance;
+	&--gap-8 {
+		gap: 8px;
+	}
+	&__label,
+	&__title {
+		max-width: 1000px;
+		color: $liteColor;
+		font-family: $fontSatoshi;
+	}
+	// .blockhead__label
+	&__label {
+		font-size: 13px;
+		line-height: 1.6;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+	}
+	// .blockhead__title
+	&__title {
+		font-size: 128px;
+		font-weight: 300;
+		span {
+			display: block;
+			font-family: $fontGambetta;
+		}
+		&--size-80 {
+			font-size: 80px;
+		}
+		&--size-96 {
+			font-size: 96px;
+		}
+		&--size-160 {
+			@include adaptiveValue("font-size", 160, 45);
+			@media (max-height: toEm(850)){
+				@include adaptiveValue("font-size", 128, 45);
+			}
+		}
+	}
+	// .blockhead__text
+	&__text {
+		max-width: 600px;
+		font-size: 20px;
+		line-height: 1.7;
+		&--size-18 {
+			@include adaptiveValue("font-size", 18, 14);
+		}
+		&--size-24 {
+			@include adaptiveValue("font-size", 24, 16);
+		}
+	}
+}

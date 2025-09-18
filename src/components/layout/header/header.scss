@@ -4,11 +4,14 @@
 	left: 0;
 	right: 0;
 	z-index: 50;
+	pointer-events: none;
 	@media (min-width:toEm($mobile)) {
 		top: 48px;
 	}
 	// .header__container
-	&__container {}
+	&__container {
+		pointer-events: auto;
+	}
 	&__button,
 	&__logo,
 	&__link-logo {

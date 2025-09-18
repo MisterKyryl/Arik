@@ -52,6 +52,22 @@
         "start": 1758130658143,
         "end": 1758135893498,
         "type": "build"
+      },
+      {
+        "date": "18.09.2025",
+        "start": 1758209563099,
+        "end": 1758210273967
+      },
+      {
+        "date": "18.09.2025",
+        "start": 1758210280454,
+        "end": 1758210944997
+      },
+      {
+        "date": "18.09.2025",
+        "start": 1758211001147,
+        "end": 1758219247762,
+        "type": "build"
       }
     ],
     "files": [
@@ -86,7 +102,11 @@
       "header.scss",
       "header.html",
       "menu.scss",
-      "menu.html"
+      "menu.html",
+      "arik.png",
+      "arik.jpg",
+      "blockhead.html",
+      "blockhead.scss"
     ]
   }
 }

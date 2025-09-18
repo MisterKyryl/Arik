@@ -1,0 +1,26 @@
+.page {
+	// .page__hero
+	&__hero {}
+}
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+.hero {
+	// .hero__container
+	&__container {
+		text-align: center;
+		min-height: 100svh;
+
+		display: grid;
+		align-content: center;
+	}
+	// .hero__image
+	&__image {
+		width: 100vw;
+		height: 55svh;
+		object-fit: contain;
+		mix-blend-mode: lighten;
+	}
+	// .hero__blockhead
+	&__blockhead {
+		translate:0 -12%;
+	}
+}
