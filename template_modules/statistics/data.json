@@ -68,6 +68,16 @@
         "start": 1758211001147,
         "end": 1758219247762,
         "type": "build"
+      },
+      {
+        "date": "19.09.2025",
+        "start": 1758292441930,
+        "end": 1758296547622
+      },
+      {
+        "date": "19.09.2025",
+        "start": 1758296555108,
+        "end": 1758304561241
       }
     ],
     "files": [
@@ -106,7 +116,18 @@
       "arik.png",
       "arik.jpg",
       "blockhead.html",
-      "blockhead.scss"
+      "blockhead.scss",
+      "home.scss",
+      "skill.html",
+      "skill.js",
+      "skill.scss",
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "work.html",
+      "work.scss",
+      "Noise.png"
     ]
   }
 }

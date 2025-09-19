@@ -1,14 +1,20 @@
 .page {
 	// .page__hero
 	&__hero {}
+	// .page__clients
+	&__clients {}
+	// .page__skills
+	&__skills {}
+	// .page__selected-work
+	&__selected-work {}
 }
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 .hero {
+	@include adaptiveValue("padding-block", 50, 15);
 	// .hero__container
 	&__container {
 		text-align: center;
 		min-height: 100svh;
-
 		display: grid;
 		align-content: center;
 	}
@@ -21,6 +27,51 @@
 	}
 	// .hero__blockhead
 	&__blockhead {
-		translate:0 -12%;
+		translate: 0 -12%;
+	}
+}
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+.clients {
+	@include adaptiveValue("padding-top", 128, 15);
+	// .clients__container
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+	// .clients__item
+	&__item {}
+}
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+.selected-work {
+	@include adaptiveValue("padding-top", 163, 60);
+	padding-bottom: 60px;
+	// .selected-work__container
+	&__container {}
+	// .selected-work__header
+	&__header {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 15px;
+		align-items: center;
+		@include adaptiveValue("margin-bottom", 32, 15);
+		@media (min-width:toEm($mobile)) {
+			padding-inline: 32px;
+		}
+	}
+	// .selected-work__title
+	&__title {
+		color: $liteColor;
+		font-family: $fontSatoshi;
+		line-height: 1.1;
+		font-weight: 300;
+		@include adaptiveValue("font-size", 64, 32);
+		span {
+			font-family: $fontGambetta;
+			font-style: italic;
+		}
 	}
 }

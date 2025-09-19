@@ -1,0 +1,57 @@
+.skills {
+	counter-reset: item;
+	@include adaptiveValue("padding-top", 80, 60);
+	// .skills__container
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		// display: grid;
+		gap: 32px;
+		// grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
+	}
+}
+.skill {
+	flex: 1 1 350px;
+	border: 1px solid $greyColor;
+	border-radius: 2px;
+	background: $mutedColor;
+	@include adaptiveValue("padding", 48, 15);
+	>* {
+		margin-bottom: 8px;
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+	&::before {
+		counter-increment: item;
+		content: counter(item, decimal-leading-zero);
+		font-size: 13px;
+		line-height: 1.6;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		margin-bottom: 4px;
+	}
+	// .skill__title
+	&__title {
+		font-family: $fontSatoshi;
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 1.3;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: $liteColor;
+	}
+	// .skill__link-title
+	&__link-title {
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	// .skill__text
+	&__text {
+		margin-bottom: 32px;
+		line-height: 1.8;
+	}
+}

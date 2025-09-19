@@ -9,6 +9,7 @@
 	border-radius: 2px;
 	padding: 9px 15px;
 	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
 	background-color: $mutedColor;
 	// text
 	font-size: 13px;
@@ -50,6 +51,7 @@
 			align-content: center;
 			border: 1px solid $greyColor;
 			backdrop-filter: blur(15px);
+			-webkit-backdrop-filter: blur(15px);
 			background-color: $mutedColor;
 			border-radius: 50%;
 			transition: all 0.5s;
