@@ -7,6 +7,8 @@
 	&__skills {}
 	// .page__selected-work
 	&__selected-work {}
+	// .page__process
+	&__process {}
 }
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 .hero {
@@ -73,5 +75,108 @@
 			font-family: $fontGambetta;
 			font-style: italic;
 		}
+	}
+}
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+.process {
+	counter-reset: item;
+	// .process__container
+	&__container {}
+	// .process__blockhead
+	&__blockhead {
+		@include adaptiveValue("margin-bottom", 48, 15);
+	}
+	// .process__items
+	&__items {}
+}
+.items-process {
+	// .items-process__header
+	&__header {
+		position: relative;
+		@include adaptiveValue("height", 158, 80);
+		display: grid;
+		grid-template-rows: 46px 1fr;
+		gap: 16px;
+		justify-items: center;
+		&::after {
+			content: '';
+			height: 100%;
+			width: 1px;
+			background-color: $greyColor;
+		}
+	}
+	// .items-process__arrow
+	&__arrow {
+		width: 46px;
+		height: 46px;
+		font-size: 15px;
+		text-align: center;
+		align-content: center;
+		backdrop-filter: blur(15px);
+		-webkit-backdrop-filter: blur(15px);
+		background: $mutedColor;
+		border: 1px solid $greyColor;
+		border-radius: 50%;
+	}
+	// .items-process__body
+	&__body {
+		display: flex;
+		flex-direction: column;
+	}
+}
+.item-process {
+	flex: 0 1 auto;
+	width: 50%;
+	position: relative;
+	padding-right: 99.5px;
+	&::before {
+		content: '';
+		position: absolute;
+		background-color: $greyColor;
+		width: 1px;
+		height: 100%;
+		right: -1px;
+	}
+	&::after {
+		z-index: 2;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		translate: 50% -50%;
+		counter-increment: item;
+		content: counter(item, decimal-leading-zero);
+		width: 40px;
+		height: 40px;
+		outline: 16px solid $bgColor;
+		font-size: 13px;
+		text-align: center;
+		align-content: center;
+		background-color: $mutedColorFull;
+		border: 1px solid $greyColor;
+		border-radius: 50%;
+	}
+	// .item-process__body
+	&__body {
+		background-color: $mutedColorFull;
+		border: 1px solid $greyColor;
+		border-radius: 2px;
+		@include adaptiveValue("padding", 48, 20);
+	}
+	&:nth-child(odd) {
+		align-self: flex-end;
+		padding-left: 99.5px;
+		padding-right: 0;
+		&::before {
+			right: auto;
+			left: 0;
+		}
+		&::after {
+			left: 0;
+			right: auto;
+			translate: -50% -50%;
+		}
+	}
+	&:not(:first-child) {
+		translate: 0 -50px;
 	}
 }

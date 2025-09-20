@@ -1,9 +1,9 @@
 .blockhead {
 	display: grid;
 	justify-items: center;
-	gap: 16px;
 	text-align: center;
 	text-wrap: balance;
+	@include adaptiveValue("gap", 16, 8);
 	&--gap-8 {
 		gap: 8px;
 	}
@@ -22,8 +22,8 @@
 	}
 	// .blockhead__title
 	&__title {
-		font-size: 128px;
 		font-weight: 300;
+		@include adaptiveValue("font-size", 128, 45);
 		span {
 			display: block;
 			font-family: $fontGambetta;
@@ -36,7 +36,7 @@
 		}
 		&--size-160 {
 			@include adaptiveValue("font-size", 160, 45);
-			@media (max-height: toEm(850)){
+			@media (max-height: toEm(850)) {
 				@include adaptiveValue("font-size", 128, 45);
 			}
 		}
@@ -44,8 +44,8 @@
 	// .blockhead__text
 	&__text {
 		max-width: 600px;
-		font-size: 20px;
 		line-height: 1.7;
+		@include adaptiveValue("font-size", 20, 15);
 		&--size-18 {
 			@include adaptiveValue("font-size", 18, 14);
 		}
